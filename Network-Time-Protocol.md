@@ -1,8 +1,6 @@
 ## Overview
 Network Time Protocol (NTP) is to synchronize network device clock to a reference clock. A reference clock provides accurate time similar to an atomic clock or a GPS clock. Reference clocks are stratum 0 within the NTP hierarchy.
 
-
-
 Network Engineers review device logs to troubleshoot an issue in the network. For example, a user reports their network was inconsistency at 13:10 on December 26, 2025. Device logs are reviewed to corelate the timestamps to confirm if a device had network events.
 
 ## Device Clock
@@ -126,8 +124,6 @@ Show a way how to sync the hardware clock to the software clock here including t
 
 ``
 
-
-
 ## Configuring the Time Zone
 
 ```bash
@@ -165,9 +161,13 @@ rtr01#
 
 ## Daylight Saving Time (Summer Time)
 
+Network device clock needs to be configured to sync with daylight saving time. The following command from ```2 Sunday March 02:00``` defines the start of DST and ```1 Sunday November 02:00``` defines the end of DST.
 
-## Clock Commands
+Number 2 in start of DST define the summer time starts 2nd monday of march, similarly number 1 refers to DST ends on first sunday of november.
 
+```bash
+rtr(config)#clock summer-time pst recurring 2 sunday march 02:00 1 sunday november 02:20
+```
 
 ## Network Time Protocol
 
