@@ -2,6 +2,8 @@
 
 This repository documents notes and CML lab exercises for Cisco CCNA 200-301 exam objectives.
 
+**Exam Date:** April 26, 2026 &nbsp;|&nbsp; 📊 [Study Progress & Schedule](CCNA-Study-Progress.md)
+
 ---
 
 ## Notes
