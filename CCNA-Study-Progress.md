@@ -17,7 +17,7 @@
 | Ch 7  | Named and Extended IP ACLs | 5/6 | 83% | Q5 (src port on ACE) | ☐ | ✅ | CML ACL Lab |
 | Ch 8  | Applied IP ACLs | –/– | – | – | ☐ | ✅ | CML ACL Lab |
 | Ch 9  | Security Architectures | 8/9 | 89% | Q5 (reflection attack) | ☐ | ☐ | |
-| Ch 10 | Securing Network Devices | –/– | – | – | ☐ | ☐ | |
+| Ch 10 | Securing Network Devices | 2/6 | 33% | Q2, Q3, Q5, Q6 (SSH, device access, firewall/IPS) | ☐ | ☐ | Read chapter first |
 | Ch 11 | Implementing Switch Port Security | –/– | – | – | ☐ | ☐ | |
 | Ch 12 | DHCP Snooping and ARP Inspection | –/– | – | – | ☐ | ☐ | |
 | Ch 13 | Device Management Protocols | –/– | – | – | ☐ | ☐ | |
@@ -33,7 +33,7 @@
 | Ch 23 | Understanding REST and JSON | –/– | – | – | ☐ | ☐ | |
 | Ch 24 | Understanding Ansible and Terraform | –/– | – | – | ☐ | ☐ | |
 
-**Chapters with DIKTA completed:** 2 of 24 &nbsp;|&nbsp; **Average score:** 86%
+**Chapters with DIKTA completed:** 3 of 24 &nbsp;|&nbsp; **Average score:** 68% &nbsp;|&nbsp; *(Ch7: 83%, Ch9: 89%, Ch10: 33%)*
 
 ---
 
@@ -43,6 +43,10 @@
 |---|---|---|---|
 | Ch 7 | Q5 | `eq <port>` placement on source vs destination in extended ACLs | Reviewed ✅ |
 | Ch 9 | Q5 | Reflection attack — victim's address spoofed as source | Reviewed ✅ |
+| Ch 10 | Q2 | SSH / device access control | Pending — read chapter first |
+| Ch 10 | Q3 | SSH / device access control | Pending — read chapter first |
+| Ch 10 | Q5 | SSH / device access control | Pending — read chapter first |
+| Ch 10 | Q6 | Firewall/IPS concepts | Pending — read chapter first |
 
 ---
 
@@ -52,7 +56,7 @@
 
 | Date | Day | Focus | Chapters | Target |
 |---|---|---|---|---|
-| Apr 11 | Sat | Part III Security (cont.) | Ch 9 ✅ + Ch 10 | DIKTA + Read Ch 10 |
+| Apr 11 | Sat | Part III Security (cont.) | Ch 9 ✅ + Ch 10 ✅ DIKTA | Read Ch 10 (DIKTA done — 33%, read carefully) |
 | Apr 12 | Sun | Part III Security | Ch 11, Ch 12 | DIKTA + Read both |
 | Apr 13 | Mon | Part III Review + CML Lab | Ch 11–12 Lab | Port Security + DHCP Snooping lab |
 | Apr 14 | Tue | Part I Wireless | Ch 1, Ch 2 | DIKTA + Read both |
@@ -80,6 +84,7 @@ Based on DIKTA results and known weak areas from memory:
 | NAT (Ch 14) | 🔴 High | Known weak area |
 | QoS (Ch 15) | 🔴 High | Known weak area |
 | SDN/Automation (Ch 21–24) | 🔴 High | High exam weight, conceptual |
+| Securing Network Devices (Ch 10) | 🔴 High | 33% DIKTA — SSH, device access, firewall/IPS all missed |
 | Wireless Security (Ch 3) | 🟡 Medium | Overlaps with Security track |
 | FHRP (Ch 16) | 🟡 Medium | Protocol details easy to confuse |
 | ACLs (Ch 6–8) | 🟢 Low | CML lab completed, reviewed |
