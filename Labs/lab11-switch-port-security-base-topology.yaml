@@ -1,0 +1,321 @@
+lab:
+  title: "Lab-11 - Implementing Switch Port Security (Ch11 Vol2)"
+  description: >-
+    Base topology for Ch11 Vol2 - Implementing Switch Port Security.
+    Covers CCNA 200-301 v1.1 exam topic 5.7: Configure and verify Layer 2
+    security features (port security). All ports pre-configured in access mode.
+    No port security applied — students configure per task instructions.
+  notes: |
+    ============================================================
+    LAB-11: IMPLEMENTING SWITCH PORT SECURITY
+    CCNA 200-301 v1.1 Exam Topic: 5.7
+    ============================================================
+
+    TOPOLOGY DIAGRAM:
+
+      [PC1] ------Gi0/1------ [SW1] ------Gi0/2------ [PC2]
+      10.1.1.10/24              |                      10.1.1.20/24
+                               Gi0/3
+                                |
+                              [PC3]  10.1.1.30/24
+                                |
+                               Gi0/0
+                                |
+                            [UNS1-Hub]
+                           /          \
+                        [PC4]        [ROGUE]
+                     10.1.1.40/24   10.1.1.99/24
+
+    ============================================================
+    SW1 PORT ROLE SUMMARY:
+      Gi0/0  → UNS1 (hub with PC4 + ROGUE behind it)
+      Gi0/1  → PC1  (sticky MAC task, shutdown mode)
+      Gi0/2  → PC2  (static MAC task, restrict mode)
+      Gi0/3  → PC3  (protect mode task)
+
+    VIOLATION MODE ASSIGNMENT (students configure):
+      Gi0/0  — shutdown mode   (multi-device violation + errdisable recovery)
+      Gi0/1  — shutdown mode   (sticky MAC, SECURE-UP demonstration)
+      Gi0/2  — restrict mode   (static MAC)
+      Gi0/3  — protect mode    (static MAC with mismatched device)
+
+    IP ADDRESSES:
+      PC1    : 10.1.1.10/24
+      PC2    : 10.1.1.20/24
+      PC3    : 10.1.1.30/24
+      PC4    : 10.1.1.40/24
+      ROGUE  : 10.1.1.99/24
+
+    BASE STATE (before tasks):
+      - SW1 all ports set to switchport mode access
+      - NO port security configured anywhere
+      - UNS1 is an unmanaged hub — PC4 and ROGUE share SW1 Gi0/0
+
+    TASKS OVERVIEW:
+      Task 1: Configure access mode on all SW1 active ports
+      Task 2: Configure sticky MAC + shutdown mode on Gi0/1 (PC1)
+      Task 3: Configure static MAC + restrict mode on Gi0/2 (PC2)
+      Task 4: Configure static MAC + protect mode on Gi0/3 (PC3)
+      Task 5: Configure shutdown mode on Gi0/0, trigger and observe violation
+      Task 6: Configure and test errdisable recovery on Gi0/0
+      Task 7: Secure all unused ports on SW1
+      Task 8: Full verification using all show commands
+    ============================================================
+  version: "0.1.0"
+
+nodes:
+
+  - id: n0
+    label: SW1
+    node_definition: iosvl2
+    x: 200
+    y: 300
+    image_definition: null
+    ram: null
+    cpus: null
+    cpu_limit: null
+    data_volume: null
+    boot_disk_size: null
+    hide_links: false
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        type: physical
+      - id: i2
+        label: GigabitEthernet0/1
+        type: physical
+      - id: i3
+        label: GigabitEthernet0/2
+        type: physical
+      - id: i4
+        label: GigabitEthernet0/3
+        type: physical
+    configuration: |
+      hostname SW1
+      !
+      no ip domain-lookup
+      !
+      interface Loopback0
+       no shutdown
+      !
+      interface GigabitEthernet0/0
+       description To-UNS1-Hub
+       switchport mode access
+       no shutdown
+      !
+      interface GigabitEthernet0/1
+       description To-PC1
+       switchport mode access
+       no shutdown
+      !
+      interface GigabitEthernet0/2
+       description To-PC2
+       switchport mode access
+       no shutdown
+      !
+      interface GigabitEthernet0/3
+       description To-PC3
+       switchport mode access
+       no shutdown
+      !
+      line con 0
+       logging synchronous
+      !
+      end
+
+  - id: n1
+    label: UNS1
+    node_definition: unmanaged_switch
+    x: 200
+    y: 550
+    image_definition: null
+    ram: null
+    cpus: null
+    cpu_limit: null
+    data_volume: null
+    boot_disk_size: null
+    hide_links: false
+    tags: []
+    interfaces:
+      - id: i0
+        label: port0
+        type: physical
+      - id: i1
+        label: port1
+        type: physical
+      - id: i2
+        label: port2
+        type: physical
+
+  - id: n2
+    label: PC1
+    node_definition: desktop
+    x: -100
+    y: 100
+    image_definition: null
+    ram: null
+    cpus: null
+    cpu_limit: null
+    data_volume: null
+    boot_disk_size: null
+    hide_links: false
+    tags: []
+    interfaces:
+      - id: i0
+        label: eth0
+        type: physical
+    configuration: |
+      #cloud-config
+      hostname: PC1
+      manage_etc_hosts: true
+      runcmd:
+        - ip addr add 10.1.1.10/24 dev eth0
+        - ip link set eth0 up
+
+  - id: n3
+    label: PC2
+    node_definition: desktop
+    x: 500
+    y: 100
+    image_definition: null
+    ram: null
+    cpus: null
+    cpu_limit: null
+    data_volume: null
+    boot_disk_size: null
+    hide_links: false
+    tags: []
+    interfaces:
+      - id: i0
+        label: eth0
+        type: physical
+    configuration: |
+      #cloud-config
+      hostname: PC2
+      manage_etc_hosts: true
+      runcmd:
+        - ip addr add 10.1.1.20/24 dev eth0
+        - ip link set eth0 up
+
+  - id: n4
+    label: PC3
+    node_definition: desktop
+    x: 500
+    y: 300
+    image_definition: null
+    ram: null
+    cpus: null
+    cpu_limit: null
+    data_volume: null
+    boot_disk_size: null
+    hide_links: false
+    tags: []
+    interfaces:
+      - id: i0
+        label: eth0
+        type: physical
+    configuration: |
+      #cloud-config
+      hostname: PC3
+      manage_etc_hosts: true
+      runcmd:
+        - ip addr add 10.1.1.30/24 dev eth0
+        - ip link set eth0 up
+
+  - id: n5
+    label: PC4
+    node_definition: desktop
+    x: -100
+    y: 600
+    image_definition: null
+    ram: null
+    cpus: null
+    cpu_limit: null
+    data_volume: null
+    boot_disk_size: null
+    hide_links: false
+    tags: []
+    interfaces:
+      - id: i0
+        label: eth0
+        type: physical
+    configuration: |
+      #cloud-config
+      hostname: PC4
+      manage_etc_hosts: true
+      runcmd:
+        - ip addr add 10.1.1.40/24 dev eth0
+        - ip link set eth0 up
+
+  - id: n6
+    label: ROGUE
+    node_definition: desktop
+    x: 500
+    y: 600
+    image_definition: null
+    ram: null
+    cpus: null
+    cpu_limit: null
+    data_volume: null
+    boot_disk_size: null
+    hide_links: false
+    tags: []
+    interfaces:
+      - id: i0
+        label: eth0
+        type: physical
+    configuration: |
+      #cloud-config
+      hostname: ROGUE
+      manage_etc_hosts: true
+      runcmd:
+        - ip addr add 10.1.1.99/24 dev eth0
+        - ip link set eth0 up
+
+links:
+
+  # SW1 Gi0/1 <-> PC1 eth0
+  - id: l0
+    n1: n0
+    i1: i2
+    n2: n2
+    i2: i0
+
+  # SW1 Gi0/2 <-> PC2 eth0
+  - id: l1
+    n1: n0
+    i1: i3
+    n2: n3
+    i2: i0
+
+  # SW1 Gi0/3 <-> PC3 eth0
+  - id: l2
+    n1: n0
+    i1: i4
+    n2: n4
+    i2: i0
+
+  # SW1 Gi0/0 <-> UNS1 port0
+  - id: l3
+    n1: n0
+    i1: i1
+    n2: n1
+    i2: i0
+
+  # UNS1 port1 <-> PC4 eth0
+  - id: l4
+    n1: n1
+    i1: i1
+    n2: n5
+    i2: i0
+
+  # UNS1 port2 <-> ROGUE eth0
+  - id: l5
+    n1: n1
+    i1: i2
+    n2: n6
+    i2: i0
