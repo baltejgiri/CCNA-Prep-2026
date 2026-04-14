@@ -18,7 +18,7 @@
 | Ch 8  | Applied IP ACLs | –/– | – | – | ☐ | ✅ | CML ACL Lab |
 | Ch 9  | Security Architectures | 8/9 | 89% | Q5 (reflection attack) | ☐ | ☐ | |
 | Ch 10 | Securing Network Devices | 6/6 | 100% | None — all cleared post-read | ✅ | ✅ | Lab-10 score: 73/82 (89%) |
-| Ch 11 | Implementing Switch Port Security | –/– | – | – | ☐ | ☐ | |
+| Ch 11 | Implementing Switch Port Security | 3/5 | 60% | Q1 (port security default), Q2 (port security behavior) | ☐ | ☐ | Read chapter — below 75% gate |
 | Ch 12 | DHCP Snooping and ARP Inspection | –/– | – | – | ☐ | ☐ | |
 | Ch 13 | Device Management Protocols | –/– | – | – | ☐ | ☐ | |
 | Ch 14 | Network Address Translation | –/– | – | – | ☐ | ☐ | |
@@ -33,7 +33,7 @@
 | Ch 23 | Understanding REST and JSON | –/– | – | – | ☐ | ☐ | |
 | Ch 24 | Understanding Ansible and Terraform | –/– | – | – | ☐ | ☐ | |
 
-**Chapters with DIKTA completed:** 4 of 24 &nbsp;|&nbsp; **Average score:** 88% &nbsp;|&nbsp; *(Ch7: 83%, Ch9: 89%, Ch10 pre-read: 33% → post-read: 100%)*
+**Chapters with DIKTA completed:** 5 of 24 &nbsp;|&nbsp; **Average score:** 82% &nbsp;|&nbsp; *(Ch7: 83%, Ch9: 89%, Ch10 pre-read: 33% → post-read: 100%, Ch11: 60%)*
 
 ---
 
@@ -64,6 +64,8 @@
 | Ch 10 | Q3 | SSH / device access control | Reviewed ✅ — cleared post-read |
 | Ch 10 | Q5 | SSH / device access control | Reviewed ✅ — cleared post-read |
 | Ch 10 | Q6 | Firewall/IPS concepts | Reviewed ✅ — cleared post-read |
+| Ch 11 | Q1 | Port security default behaviour | Pending — read chapter |
+| Ch 11 | Q2 | Port security violation modes / sticky MAC behaviour | Pending — read chapter |
 
 ---
 
@@ -76,7 +78,7 @@
 | Apr 11 | Sat | Part III Security (cont.) | Ch 9 + Ch 10 DIKTA | Read Ch 10 | ✅ Done |
 | Apr 12 | Sun | Part III Security | Ch 10 Lab | Lab-10: SSH + Passwords + NGFW | ✅ Done |
 | Apr 13 | Mon | Part III Security | Ch 10 complete — DIKTA retake | 6/6 post-read | ✅ Done |
-| Apr 14 | Tue | Part III Security | Ch 11, Ch 12 | DIKTA + Read both | ⬜ |
+| Apr 14 | Tue | Part III Security | Ch 11, Ch 12 | DIKTA + Read both | ✅ Ch11 DIKTA: 3/5 (60%) — read required |
 | Apr 15 | Wed | Part III Lab | Ch 11–12 CML Lab | Port Security + DHCP Snooping lab | ⬜ |
 | Apr 16 | Thu | Part I Wireless | Ch 1, Ch 2 | DIKTA + Read both | ⬜ |
 | Apr 17 | Fri | Part I Wireless | Ch 3, Ch 4 | DIKTA + Read both + Part I Review | ⬜ |
@@ -104,6 +106,7 @@ Based on DIKTA results and known weak areas from memory:
 | Wireless Security (Ch 3) | 🟡 Medium | Overlaps with Security track |
 | FHRP (Ch 16) | 🟡 Medium | Protocol details easy to confuse |
 | NGFW vs IPS (Ch 10) | 🟡 Medium | Lab-10 Task 6 showed gaps in FTD vs ASA distinction |
+| Switch Port Security (Ch 11) | 🟡 Medium | 60% pre-read DIKTA — Q1 and Q2 missed |
 | ACLs (Ch 6–8) | 🟢 Low | CML lab completed, reviewed |
 | Security Fundamentals (Ch 9) | 🟢 Low | 89% DIKTA, weak Q reviewed |
 | Securing Network Devices (Ch 10) | 🟢 Low | 100% post-read DIKTA, Lab-10 89% |
