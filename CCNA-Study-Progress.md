@@ -1,6 +1,6 @@
 # CCNA 200-301 Study Progress — Volume 2
 
-**Exam Date:** April 26, 2026 &nbsp;|&nbsp; **Today:** April 14, 2026 &nbsp;|&nbsp; **Days Remaining:** 12
+**Exam Date:** April 26, 2026 &nbsp;|&nbsp; **Today:** April 15, 2026 &nbsp;|&nbsp; **Days Remaining:** 11
 
 ---
 
@@ -19,7 +19,7 @@
 | Ch 9  | Security Architectures | 8/9 | 89% | – | – | Q5 (reflection attack) | ☐ | ☐ | – |
 | Ch 10 | Securing Network Devices | 2/6 | 33% | 6/6 | 100% | All cleared post-read | ✅ | ✅ | 73/82 (89%) |
 | Ch 11 | Implementing Switch Port Security | 3/5 | 60% | – | – | Q1 (port security default), Q2 (violation mode behavior) | ✅ | ✅ | 99/100 (99%) |
-| Ch 12 | DHCP Snooping and ARP Inspection | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 12 | DHCP Snooping and ARP Inspection | 3/7 | 43% | – | – | Q4, Q5, Q6, Q7 | ☐ | ☐ | – |
 | Ch 13 | Device Management Protocols | –/– | – | – | – | – | ☐ | ☐ | – |
 | Ch 14 | Network Address Translation | –/– | – | – | – | – | ☐ | ☐ | – |
 | Ch 15 | Quality of Service (QoS) | –/– | – | – | – | – | ☐ | ☐ | – |
@@ -33,7 +33,7 @@
 | Ch 23 | Understanding REST and JSON | –/– | – | – | – | – | ☐ | ☐ | – |
 | Ch 24 | Understanding Ansible and Terraform | –/– | – | – | – | – | ☐ | ☐ | – |
 
-**Chapters with DIKTA completed:** 5 of 24 &nbsp;|&nbsp; **Average DIKTA (pre-read):** 72% &nbsp;|&nbsp; *(Ch7: 83%, Ch9: 89%, Ch10: 33% pre / 100% post, Ch11: 60%)*
+**Chapters with DIKTA completed:** 6 of 24 &nbsp;|&nbsp; **Average DIKTA (pre-read):** 65% &nbsp;|&nbsp; *(Ch7: 83%, Ch9: 89%, Ch10: 33% pre / 100% post, Ch11: 60%, Ch12: 43%)*
 
 ---
 
@@ -90,6 +90,32 @@
 - **Q2** — Difference between protect, restrict, and shutdown violation mode behavior (counter, syslog, port state)
 
 > Post-read DIKTA: **Pending** — complete after reviewing Lab-11 results.
+
+---
+
+### Chapter 12 — DHCP Snooping and ARP Inspection
+
+#### Pre-Read DIKTA (April 15, 2026)
+
+**Score: 3/7 (43%)** ❌ — Well below gate. Chapter must be read before lab.
+
+| Q | Answer Submitted | Correct | Result | Topic (Ch 12) |
+|---|---|---|---|---|
+| 1 | A, C | A, C | ✅ | DHCP snooping concepts |
+| 2 | B, C | B, C | ✅ | DHCP snooping trusted/untrusted ports |
+| 3 | C, D | C, D | ✅ | DHCP snooping behavior |
+| 4 | D | A | ❌ | DHCP snooping configuration/verification |
+| 5 | A | B | ❌ | DHCP snooping rate limiting or binding table |
+| 6 | C, D | B, D | ❌ | Dynamic ARP Inspection (DAI) concepts |
+| 7 | B, D | C, D | ❌ | DAI configuration or ARP ACL behavior |
+
+**Weak areas identified:**
+- **Q4** — DHCP snooping: answered D, correct A
+- **Q5** — DHCP snooping / binding table: answered A, correct B
+- **Q6** — DAI concepts: submitted C,D — D is correct but C is wrong (should be B)
+- **Q7** — DAI configuration: submitted B,D — D is correct but B is wrong (should be C)
+
+> Post-read DIKTA: **Pending** — complete after reading Ch12 and finishing lab.
 
 ---
 
@@ -182,6 +208,10 @@ errdisable recovery: psecure-violation Enabled | Interval: 30 seconds
 | Ch 10 | Q6 | Firewall/IPS concepts | Cleared ✅ — 100% post-read |
 | Ch 11 | Q1 | Default violation mode (`shutdown` is default) | Cleared ✅ — demonstrated in Lab-11 Task 5 |
 | Ch 11 | Q2 | Protect vs Restrict — protect has no counter increment or syslog | Cleared ✅ — demonstrated in Lab-11 Tasks 3 & 4 |
+| Ch 12 | Q4 | DHCP snooping configuration/verification | Pending — read chapter |
+| Ch 12 | Q5 | DHCP snooping rate limiting / binding table behavior | Pending — read chapter |
+| Ch 12 | Q6 | DAI concepts — answered C,D; correct is B,D | Pending — read chapter |
+| Ch 12 | Q7 | DAI configuration / ARP ACL — answered B,D; correct is C,D | Pending — read chapter |
 
 ---
 
@@ -195,7 +225,7 @@ errdisable recovery: psecure-violation Enabled | Interval: 30 seconds
 | Apr 12 | Sun | Part III Security | Ch 10 Lab | Lab-10: SSH + Passwords + NGFW | ✅ Done |
 | Apr 13 | Mon | Part III Security | Ch 10 complete — DIKTA retake | 6/6 post-read | ✅ Done |
 | Apr 14 | Tue | Part III Security | Ch 11 read + lab | Lab-11: Port Security 99/100 | ✅ Done |
-| Apr 15 | Wed | Part III Lab | Ch 11 post-read DIKTA + Ch 12 | DHCP Snooping + ARP Inspection | ⬜ |
+| Apr 15 | Wed | Part III Lab | Ch 11 post-read DIKTA + Ch 12 | DHCP Snooping + ARP Inspection | 🔄 Ch12 DIKTA: 3/7 (43%) — read required |
 | Apr 16 | Thu | Part I Wireless | Ch 1, Ch 2 | DIKTA + Read both | ⬜ |
 | Apr 17 | Fri | Part I Wireless | Ch 3, Ch 4 | DIKTA + Read both + Part I Review | ⬜ |
 | Apr 18 | Sat | Part II ACL Review | Ch 5, Ch 6 | DIKTA + Read + Part II Review | ⬜ |
@@ -226,6 +256,7 @@ Based on DIKTA results and lab performance:
 | Security Fundamentals (Ch 9) | 🟢 Low | 89% DIKTA, weak Q reviewed |
 | Securing Network Devices (Ch 10) | 🟢 Low | 100% post-read DIKTA, Lab-10 89% |
 | Switch Port Security (Ch 11) | 🟢 Low | Lab-11 99%, Q1/Q2 weak areas cleared via lab |
+| DHCP Snooping + DAI (Ch 12) | 🟡 Medium | 43% pre-read DIKTA — Q4–Q7 all missed; read chapter before lab |
 
 ---
 
