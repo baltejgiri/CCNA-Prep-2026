@@ -119,7 +119,7 @@ Based on DIKTA results and known weak areas from memory:
 |---|---|---|---|---|
 | CCNA ACL Lab — Standard, Extended & Named ACLs | Ch 6, 7, 8 | 2026-04-11 | 12/12 (100%) | — |
 | Lab-10 — Securing Network Devices | Ch 10 | 2026-04-13 | 73/82 (89%) | e4304fec-0bb5-4eee-9e95-9814aecf5cdd |
-| Lab-11 — Implementing Switch Port Security | Ch 11 | 2026-04-14 | Pending | 5951f588-5611-4dc2-8d9d-1663eca74546 |
+| Lab-11 — Implementing Switch Port Security | Ch 11 | 2026-04-14 | 99/100 (99%) | 5951f588-5611-4dc2-8d9d-1663eca74546 |
 
 ---
 
