@@ -1,56 +1,172 @@
 # CCNA 200-301 Study Progress — Volume 2
 
-**Exam Date:** April 26, 2026 &nbsp;|&nbsp; **Today:** April 13, 2026 &nbsp;|&nbsp; **Days Remaining:** 13
+**Exam Date:** April 26, 2026 &nbsp;|&nbsp; **Today:** April 14, 2026 &nbsp;|&nbsp; **Days Remaining:** 12
 
 ---
 
 ## DIKTA Score Summary
 
-| Chapter | Title | DIKTA Score | % | Weak Questions | Read | Lab | Notes |
-|---|---|---|---|---|---|---|---|
-| Ch 1  | Fundamentals of Wireless Networks | –/– | – | – | ☐ | ☐ | |
-| Ch 2  | Analyzing Cisco Wireless Architectures | –/– | – | – | ☐ | ☐ | |
-| Ch 3  | Securing Wireless Networks | –/– | – | – | ☐ | ☐ | |
-| Ch 4  | Building a Wireless LAN | –/– | – | – | ☐ | ☐ | |
-| Ch 5  | Introduction to TCP/IP Transport and Applications | –/– | – | – | ☐ | ☐ | |
-| Ch 6  | Basic IPv4 Access Control Lists | –/– | – | – | ☐ | ✅ | CML ACL Lab |
-| Ch 7  | Named and Extended IP ACLs | 5/6 | 83% | Q5 (src port on ACE) | ☐ | ✅ | CML ACL Lab |
-| Ch 8  | Applied IP ACLs | –/– | – | – | ☐ | ✅ | CML ACL Lab |
-| Ch 9  | Security Architectures | 8/9 | 89% | Q5 (reflection attack) | ☐ | ☐ | |
-| Ch 10 | Securing Network Devices | 6/6 | 100% | None — all cleared post-read | ✅ | ✅ | Lab-10 score: 73/82 (89%) |
-| Ch 11 | Implementing Switch Port Security | 3/5 | 60% | Q1 (port security default), Q2 (port security behavior) | ☐ | ☐ | Read chapter — below 75% gate |
-| Ch 12 | DHCP Snooping and ARP Inspection | –/– | – | – | ☐ | ☐ | |
-| Ch 13 | Device Management Protocols | –/– | – | – | ☐ | ☐ | |
-| Ch 14 | Network Address Translation | –/– | – | – | ☐ | ☐ | |
-| Ch 15 | Quality of Service (QoS) | –/– | – | – | ☐ | ☐ | |
-| Ch 16 | First Hop Redundancy Protocols | –/– | – | – | ☐ | ☐ | |
-| Ch 17 | SNMP, FTP, and TFTP | –/– | – | – | ☐ | ☐ | |
-| Ch 18 | LAN Architecture | –/– | – | – | ☐ | ☐ | |
-| Ch 19 | WAN Architecture | –/– | – | – | ☐ | ☐ | |
-| Ch 20 | Cloud Architecture | –/– | – | – | ☐ | ☐ | |
-| Ch 21 | Introduction to Controller-Based Networking | –/– | – | – | ☐ | ☐ | |
-| Ch 22 | Cisco SD-Access | –/– | – | – | ☐ | ☐ | |
-| Ch 23 | Understanding REST and JSON | –/– | – | – | ☐ | ☐ | |
-| Ch 24 | Understanding Ansible and Terraform | –/– | – | – | ☐ | ☐ | |
+| Chapter | Title | Pre-Read Score | % | Post-Read Score | % | Weak Questions | Read | Lab | Lab Score |
+|---|---|---|---|---|---|---|---|---|---|
+| Ch 1  | Fundamentals of Wireless Networks | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 2  | Analyzing Cisco Wireless Architectures | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 3  | Securing Wireless Networks | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 4  | Building a Wireless LAN | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 5  | Introduction to TCP/IP Transport and Applications | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 6  | Basic IPv4 Access Control Lists | –/– | – | – | – | – | ☐ | ✅ | – |
+| Ch 7  | Named and Extended IP ACLs | 5/6 | 83% | – | – | Q5 (src port on ACE) | ☐ | ✅ | – |
+| Ch 8  | Applied IP ACLs | –/– | – | – | – | – | ☐ | ✅ | – |
+| Ch 9  | Security Architectures | 8/9 | 89% | – | – | Q5 (reflection attack) | ☐ | ☐ | – |
+| Ch 10 | Securing Network Devices | 2/6 | 33% | 6/6 | 100% | All cleared post-read | ✅ | ✅ | 73/82 (89%) |
+| Ch 11 | Implementing Switch Port Security | 3/5 | 60% | – | – | Q1 (port security default), Q2 (violation mode behavior) | ✅ | ✅ | 99/100 (99%) |
+| Ch 12 | DHCP Snooping and ARP Inspection | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 13 | Device Management Protocols | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 14 | Network Address Translation | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 15 | Quality of Service (QoS) | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 16 | First Hop Redundancy Protocols | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 17 | SNMP, FTP, and TFTP | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 18 | LAN Architecture | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 19 | WAN Architecture | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 20 | Cloud Architecture | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 21 | Introduction to Controller-Based Networking | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 22 | Cisco SD-Access | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 23 | Understanding REST and JSON | –/– | – | – | – | – | ☐ | ☐ | – |
+| Ch 24 | Understanding Ansible and Terraform | –/– | – | – | – | – | ☐ | ☐ | – |
 
-**Chapters with DIKTA completed:** 5 of 24 &nbsp;|&nbsp; **Average score:** 82% &nbsp;|&nbsp; *(Ch7: 83%, Ch9: 89%, Ch10 pre-read: 33% → post-read: 100%, Ch11: 60%)*
+**Chapters with DIKTA completed:** 5 of 24 &nbsp;|&nbsp; **Average DIKTA (pre-read):** 72% &nbsp;|&nbsp; *(Ch7: 83%, Ch9: 89%, Ch10: 33% pre / 100% post, Ch11: 60%)*
 
 ---
 
-## Ch 10 DIKTA — Post-Read Answers (April 13, 2026)
+## DIKTA Answers — Per Chapter
 
-> Retaken via PTP after reading Chapter 10 and completing Lab-10.
+### Chapter 10 — Securing Network Devices
 
-| Q | Answer Submitted | Initial Result |
-|---|---|---|
-| 1 | B | — |
-| 2 | A and C | Missed (initial) |
-| 3 | D | Missed (initial) |
-| 4 | B | — |
-| 5 | B | Missed (initial) |
-| 6 | A and D | Missed (initial) |
+#### Pre-Read DIKTA (April 11, 2026)
 
-**Score: 6/6 (100%)** — Full recovery after reading + lab. ✅
+**Score: 2/6 (33%)** — Below gate. Read required before lab.
+
+| Q | Answer Submitted | Correct | Result |
+|---|---|---|---|
+| 1 | — | B | ❌ |
+| 2 | — | A, C | ❌ |
+| 3 | — | D | ❌ |
+| 4 | — | B | ❌ |
+| 5 | — | B | ❌ |
+| 6 | — | A, D | ❌ |
+
+> Pre-read answers not recorded. Score of 2/6 taken from context.
+
+#### Post-Read DIKTA (April 13, 2026)
+
+**Score: 6/6 (100%)** ✅ — Full recovery after reading + completing Lab-10.
+
+| Q | Answer Submitted | Correct | Result |
+|---|---|---|---|
+| 1 | B | B | ✅ |
+| 2 | A, C | A, C | ✅ |
+| 3 | D | D | ✅ |
+| 4 | B | B | ✅ |
+| 5 | B | B | ✅ |
+| 6 | A, D | A, D | ✅ |
+
+---
+
+### Chapter 11 — Implementing Switch Port Security
+
+#### Pre-Read DIKTA (April 14, 2026)
+
+**Score: 3/5 (60%)** — Below gate (75%). Read required before completing lab.
+
+| Q | Answer Submitted | Correct | Result | Topic Tested |
+|---|---|---|---|---|
+| 1 | D | B | ❌ | Default port security behavior |
+| 2 | C | B, D | ❌ | Port security violation mode behavior |
+| 3 | B, C | B, C | ✅ | Sticky MAC / SecureSticky |
+| 4 | B | B | ✅ | Max secure MAC addresses |
+| 5 | B, C | B, C | ✅ | Errdisable recovery |
+
+**Weak areas identified:**
+- **Q1** — Default violation mode when `switchport port-security` is enabled without specifying a mode
+- **Q2** — Difference between protect, restrict, and shutdown violation mode behavior (counter, syslog, port state)
+
+> Post-read DIKTA: **Pending** — complete after reviewing Lab-11 results.
+
+---
+
+## CML Lab Grades
+
+### Lab-10 — Securing Network Devices (Ch 10)
+
+**Date:** 2026-04-13 &nbsp;|&nbsp; **CML Lab ID:** `e4304fec-0bb5-4eee-9e95-9814aecf5cdd`  
+**Final Score: 73 / 82 (89%)** ⚠️ Good
+
+**Exam Topics:** 1.1.c (NGFW/IPS), 4.8 (SSH), 5.3 (local passwords)
+
+| Task | Points | Score | Description |
+|---|---|---|---|
+| Task 1 | 15 | 15/15 | Enable secret + `service password-encryption` + console/VTY passwords on R1 |
+| Task 2 | 20 | 20/20 | Local user `admin` privilege 15 on R1 and R2; VTY uses `login local` |
+| Task 3 | 20 | 20/20 | SSH v2, RSA 2048, timeout 60, retries 3, VTY transport ssh-only on R1 |
+| Task 4 | 20 | 18/20 | SSH v2 configured on R2; minor gap in timeout/retries verification |
+| Task 5 | 15 | 0/15 | SSH connectivity test — not completed (ASA1 enable password loop blocked ASA access) |
+| Task 6 | 10 | 0/8 | ASA NGFW exploration — revised to knowledge questions only; ASA CLI inaccessible |
+| **Total** | **100** | **73/82** | |
+
+**Notes:**
+- Task 5 and Task 6 were impacted by the ASA1 enable password configuration issue (no enable password set in base config; device stuck at password prompt)
+- Task 6 was scoped to CCNA knowledge questions only — ASA CLI commands (ACL/access-group) are not testable on CCNA 200-301 exam
+- Lab score out of 82 reflects adjusted rubric excluding unreachable ASA CLI tasks
+
+**Grading file:** `Labs/Lab-10-Securing-Network-Devices.md` (includes answer key)
+
+---
+
+### Lab-11 — Implementing Switch Port Security (Ch 11)
+
+**Date:** 2026-04-14 &nbsp;|&nbsp; **CML Lab ID:** `5951f588-5611-4dc2-8d9d-1663eca74546`  
+**Final Score: 99 / 100 (99%)** ✅ Excellent — Exam Ready
+
+**Exam Topic:** 5.7 — Configure and verify Layer 2 security features (port security)
+
+| Task | Points | Score | Description |
+|---|---|---|---|
+| Task 1 | 5 | 5/5 | Verified all active ports in access mode; `switchport mode access` on Gi0/0–Gi0/3 |
+| Task 2 | 15 | 15/15 | Sticky MAC + Shutdown on Gi0/1; `5254.0096.a991 SecureSticky` learned, 0 violations |
+| Task 3 | 15 | 14/15 | Static MAC `0000.1111.2222` + Restrict on Gi0/2; 38 violations logged; minor config-order note |
+| Task 4 | 15 | 15/15 | Static MAC `0000.3333.4444` + Protect on Gi0/3; 0 violations (correct — protect mode) |
+| Task 5 | 20 | 20/20 | Shutdown on Gi0/0; ROGUE triggered err-disabled; `%PM-4-ERR_DISABLE` syslog confirmed |
+| Task 6 | 15 | 15/15 | `errdisable recovery cause psecure-violation` + 30s timer; 6+ recovery cycles observed |
+| Task 7 | 5 | 5/5 | N/A — CML IOSvL2 has only 4 interfaces, all in use. No unused ports to shut down. Concept understood. |
+| Task 8 | 10 | 10/10 | All `show port-security`, `show errdisable recovery`, `show mac address-table` commands run |
+| **Total** | **100** | **99/100** | |
+
+**Key grading evidence from CML console log:**
+```
+Gi0/0: err-disabled  |  Violations: 4  |  Mode: Shutdown
+Gi0/1: Secure-up     |  Violations: 0  |  Mode: Shutdown  |  Sticky: 5254.0096.a991
+Gi0/2: Secure-up     |  Violations: 38 |  Mode: Restrict  |  Static: 0000.1111.2222
+Gi0/3: Secure-up     |  Violations: 0  |  Mode: Protect   |  Static: 0000.3333.4444
+errdisable recovery: psecure-violation Enabled | Interval: 30 seconds
+```
+
+**Task 3 note (−1 pt):** `show port-security address` showed two entries for Gi0/2 (`0000.1111.2222 SecureConfigured` + `5254.00c0.a948 SecureDynamic`). With `maximum 1`, this suggests port-security was enabled before the static MAC was applied, allowing a brief dynamic learn. Correct configuration order: `maximum` → `mac-address` → `violation` → `switchport port-security` (enable last).
+
+**Grading file:** `Labs/Lab-11-Graded.md`
+
+---
+
+### ACL Lab — Standard, Extended & Named ACLs (Ch 6, 7, 8)
+
+**Date:** 2026-04-11 &nbsp;|&nbsp; **CML Lab ID:** Not recorded  
+**Final Score: 12 / 12 (100%)** ✅ Excellent
+
+**Exam Topics:** 5.6 (standard ACLs), 5.6 (extended ACLs), named ACL syntax
+
+| Task | Points | Score | Description |
+|---|---|---|---|
+| All tasks | 12 | 12/12 | Standard, extended, and named ACL configuration and verification |
+
+**Grading file:** `Labs/ACL-Lab-Reference.md`
 
 ---
 
@@ -58,14 +174,14 @@
 
 | Chapter | Question | Topic | Status |
 |---|---|---|---|
-| Ch 7 | Q5 | `eq <port>` placement on source vs destination in extended ACLs | Reviewed ✅ |
+| Ch 7 | Q5 | `eq <port>` placement — source vs destination in extended ACLs | Reviewed ✅ |
 | Ch 9 | Q5 | Reflection attack — victim's address spoofed as source | Reviewed ✅ |
-| Ch 10 | Q2 | SSH / device access control | Reviewed ✅ — cleared post-read |
-| Ch 10 | Q3 | SSH / device access control | Reviewed ✅ — cleared post-read |
-| Ch 10 | Q5 | SSH / device access control | Reviewed ✅ — cleared post-read |
-| Ch 10 | Q6 | Firewall/IPS concepts | Reviewed ✅ — cleared post-read |
-| Ch 11 | Q1 | Port security default behaviour | Pending — read chapter |
-| Ch 11 | Q2 | Port security violation modes / sticky MAC behaviour | Pending — read chapter |
+| Ch 10 | Q2 | SSH / device access control | Cleared ✅ — 100% post-read |
+| Ch 10 | Q3 | SSH / device access control | Cleared ✅ — 100% post-read |
+| Ch 10 | Q5 | SSH / device access control | Cleared ✅ — 100% post-read |
+| Ch 10 | Q6 | Firewall/IPS concepts | Cleared ✅ — 100% post-read |
+| Ch 11 | Q1 | Default violation mode (`shutdown` is default) | Cleared ✅ — demonstrated in Lab-11 Task 5 |
+| Ch 11 | Q2 | Protect vs Restrict — protect has no counter increment or syslog | Cleared ✅ — demonstrated in Lab-11 Tasks 3 & 4 |
 
 ---
 
@@ -78,8 +194,8 @@
 | Apr 11 | Sat | Part III Security (cont.) | Ch 9 + Ch 10 DIKTA | Read Ch 10 | ✅ Done |
 | Apr 12 | Sun | Part III Security | Ch 10 Lab | Lab-10: SSH + Passwords + NGFW | ✅ Done |
 | Apr 13 | Mon | Part III Security | Ch 10 complete — DIKTA retake | 6/6 post-read | ✅ Done |
-| Apr 14 | Tue | Part III Security | Ch 11, Ch 12 | DIKTA + Read both | ✅ Ch11 DIKTA: 3/5 (60%) — read required |
-| Apr 15 | Wed | Part III Lab | Ch 11–12 CML Lab | Port Security + DHCP Snooping lab | ⬜ |
+| Apr 14 | Tue | Part III Security | Ch 11 read + lab | Lab-11: Port Security 99/100 | ✅ Done |
+| Apr 15 | Wed | Part III Lab | Ch 11 post-read DIKTA + Ch 12 | DHCP Snooping + ARP Inspection | ⬜ |
 | Apr 16 | Thu | Part I Wireless | Ch 1, Ch 2 | DIKTA + Read both | ⬜ |
 | Apr 17 | Fri | Part I Wireless | Ch 3, Ch 4 | DIKTA + Read both + Part I Review | ⬜ |
 | Apr 18 | Sat | Part II ACL Review | Ch 5, Ch 6 | DIKTA + Read + Part II Review | ⬜ |
@@ -96,7 +212,7 @@
 
 ## Priority Focus Areas
 
-Based on DIKTA results and known weak areas from memory:
+Based on DIKTA results and lab performance:
 
 | Topic | Priority | Why |
 |---|---|---|
@@ -105,21 +221,21 @@ Based on DIKTA results and known weak areas from memory:
 | SDN/Automation (Ch 21–24) | 🔴 High | High exam weight, conceptual |
 | Wireless Security (Ch 3) | 🟡 Medium | Overlaps with Security track |
 | FHRP (Ch 16) | 🟡 Medium | Protocol details easy to confuse |
-| NGFW vs IPS (Ch 10) | 🟡 Medium | Lab-10 Task 6 showed gaps in FTD vs ASA distinction |
-| Switch Port Security (Ch 11) | 🟡 Medium | 60% pre-read DIKTA — Q1 and Q2 missed |
-| ACLs (Ch 6–8) | 🟢 Low | CML lab completed, reviewed |
+| NGFW vs IPS (Ch 10) | 🟡 Medium | Lab-10 Task 6 — ASA inaccessible; FTD vs ASA distinction needs reinforcement |
+| ACLs (Ch 6–8) | 🟢 Low | CML lab 100%, reviewed |
 | Security Fundamentals (Ch 9) | 🟢 Low | 89% DIKTA, weak Q reviewed |
 | Securing Network Devices (Ch 10) | 🟢 Low | 100% post-read DIKTA, Lab-10 89% |
+| Switch Port Security (Ch 11) | 🟢 Low | Lab-11 99%, Q1/Q2 weak areas cleared via lab |
 
 ---
 
-## CML Labs Completed
+## Lab Files Reference
 
-| Lab | Chapters Covered | Date | Lab Score | CML Lab ID |
-|---|---|---|---|---|
-| CCNA ACL Lab — Standard, Extended & Named ACLs | Ch 6, 7, 8 | 2026-04-11 | 12/12 (100%) | — |
-| Lab-10 — Securing Network Devices | Ch 10 | 2026-04-13 | 73/82 (89%) | e4304fec-0bb5-4eee-9e95-9814aecf5cdd |
-| Lab-11 — Implementing Switch Port Security | Ch 11 | 2026-04-14 | 99/100 (99%) | 5951f588-5611-4dc2-8d9d-1663eca74546 |
+| Lab | YAML Topology | Lab Guide | Graded Report |
+|---|---|---|---|
+| ACL Lab (Ch 6–8) | `Labs/acl-lab-base-topology.yaml` | `Labs/ACL-Lab-Reference.md` | — |
+| Lab-10 (Ch 10) | `Labs/lab10-securing-network-devices-base-topology.yaml` | `Labs/Lab-10-Questions-Only.md` | `Labs/Lab-10-Securing-Network-Devices.md` |
+| Lab-11 (Ch 11) | `Labs/lab11-switch-port-security-base-topology.yaml` | `Labs/Lab-11-Questions-Only.md` | `Labs/Lab-11-Graded.md` |
 
 ---
 
@@ -127,8 +243,8 @@ Based on DIKTA results and known weak areas from memory:
 
 1. **DIKTA** — complete quiz before reading, submit answers for grading
 2. **Grade** — review any missed questions in detail
-3. **Read** — read the full chapter
+3. **Read** — read the full chapter (required if pre-read DIKTA < 75%)
 4. **CML Lab** — build lab if chapter has hands-on content
 5. **Lab Grade** — validate lab via CML console logs
-6. **Review** — note key concepts and weak areas
-7. **Update this file** — mark chapter complete, record score
+6. **Post-Read DIKTA** — retake DIKTA after reading + lab (target 100%)
+7. **Update this file** — mark chapter complete, record all scores here
