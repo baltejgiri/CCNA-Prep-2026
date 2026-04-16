@@ -19,7 +19,7 @@
 | Ch 9  | Security Architectures | 8/9 | 89% | – | – | Q5 (reflection attack) | ☐ | ☐ | – |
 | Ch 10 | Securing Network Devices | 2/6 | 33% | 6/6 | 100% | All cleared post-read | ✅ | ✅ | 73/82 (89%) |
 | Ch 11 | Implementing Switch Port Security | 3/5 | 60% | – | – | Q1 (port security default), Q2 (violation mode behavior) | ✅ | ✅ | 99/100 (99%) |
-| Ch 12 | DHCP Snooping and ARP Inspection | 3/7 | 43% | – | – | Q4, Q5, Q6, Q7 | ☐ | ☐ | – |
+| Ch 12 | DHCP Snooping and ARP Inspection | 3/7 | 43% | – | – | Q4, Q5, Q6, Q7 | ☐ | ✅ | Pending |
 | Ch 13 | Device Management Protocols | –/– | – | – | – | – | ☐ | ☐ | – |
 | Ch 14 | Network Address Translation | –/– | – | – | – | – | ☐ | ☐ | – |
 | Ch 15 | Quality of Service (QoS) | –/– | – | – | – | – | ☐ | ☐ | – |
@@ -196,6 +196,33 @@ errdisable recovery: psecure-violation Enabled | Interval: 30 seconds
 
 ---
 
+### Lab-12 — DHCP Snooping and Dynamic ARP Inspection (Ch 12)
+
+**Date:** 2026-04-15 &nbsp;|&nbsp; **CML Lab ID:** `1f68da4b-7452-458a-9dab-1ead741fc1fa`  
+**Final Score: Pending** — lab created, chapter not yet read
+
+**Exam Topic:** 5.7 — Configure and verify Layer 2 security features (DHCP snooping, dynamic ARP inspection)
+
+**Nodes:** SW1 (iosvl2), R1 (iosv — gateway + DHCP server), PC1 / PC2 / ROGUE (Tiny Core Linux — `server`)
+
+| Task | Points | Score | Description |
+|---|---|---|---|
+| Task 1 | 5 | — | Base connectivity verified before security config |
+| Task 2 | 10 | — | DHCP snooping enabled globally and on VLAN 1 |
+| Task 3 | 10 | — | Trusted port configured on Gi0/0 |
+| Task 4 | 10 | — | Binding table populated (PC1 + PC2 DHCP leases) |
+| Task 5 | 10 | — | Binding table verified with correct fields |
+| Task 6 | 10 | — | Rate limiting configured on all untrusted ports |
+| Task 7 | 15 | — | DAI enabled on VLAN 1 |
+| Task 8 | 10 | — | Trusted port configured for DAI on Gi0/0 |
+| Task 9 | 10 | — | Optional DAI checks (src-mac, dst-mac, ip) configured |
+| Task 10 | 10 | — | Full show command verification |
+| **Total** | **100** | **Pending** | |
+
+**Grading file:** `Labs/Lab-12-Graded.md` *(to be created after lab completion)*
+
+---
+
 ## Weak Areas to Revisit
 
 | Chapter | Question | Topic | Status |
@@ -267,6 +294,7 @@ Based on DIKTA results and lab performance:
 | ACL Lab (Ch 6–8) | `Labs/acl-lab-base-topology.yaml` | `Labs/ACL-Lab-Reference.md` | — |
 | Lab-10 (Ch 10) | `Labs/lab10-securing-network-devices-base-topology.yaml` | `Labs/Lab-10-Questions-Only.md` | `Labs/Lab-10-Securing-Network-Devices.md` |
 | Lab-11 (Ch 11) | `Labs/lab11-switch-port-security-base-topology.yaml` | `Labs/Lab-11-Questions-Only.md` | `Labs/Lab-11-Graded.md` |
+| Lab-12 (Ch 12) | `Labs/lab12-dhcp-snooping-dai-base-topology.yaml` | `Labs/Lab-12-Questions-Only.md` | `Labs/Lab-12-Graded.md` *(pending)* |
 
 ---
 
